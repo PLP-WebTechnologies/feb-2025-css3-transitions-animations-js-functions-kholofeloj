@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+button span {
+    margin-right: 10px;
+}
+
+.container {
+    justify-content: center;
+    /* align-items: center; */
+    width: 90%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #f0f4f8;
+    transition: background-color 0.4s ease;
+}
+
+header {
+    display: flex;
+    height: 200px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.quote-text {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+.small {
+    font-size: 1rem;
+    color: #666;
+}
+  
+ .buttons {
+    margin: 20px 0;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #0056b3;
+}
+
+@keyframes fadeIn {
+    from {  opacity: 0;
+            transform: translateY(10px);
+        }
+    to {    opacity: 1;
+            transform: translateY(0);
+        }
+}
+
+.favorite-label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+}
+
+
